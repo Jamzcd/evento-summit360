@@ -342,8 +342,9 @@ body {
 
 @media (max-width: 768px) {
   .hero-bg-image {
+    background-size: 100% auto;
     background-position: center top;
-    background-size: cover;
+    opacity: 0.55;
   }
 }
 
