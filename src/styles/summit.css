@@ -342,15 +342,8 @@ body {
 
 @media (max-width: 768px) {
   .hero-bg-image {
-    background-position: 60% top;
-    background-size: 200%;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-bg-image {
-    background-position: 58% top;
-    background-size: 280%;
+    background-position: center top;
+    background-size: cover;
   }
 }
 
