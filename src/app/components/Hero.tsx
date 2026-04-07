@@ -83,43 +83,10 @@ export function Hero() {
           </a>
         </div>
 
-        {/* Speaker avatars */}
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginTop: 40 }}>
-          <div style={{ display: 'flex' }}>
-            {[
-              { initial: 'L', title: 'Luiz Mazanek' },
-              { initial: 'J', title: 'Jackson Santos' },
-              { initial: 'A', title: 'Alan Ordakovski' },
-            ].map((s, i) => (
-              <div
-                key={s.initial}
-                title={s.title}
-                style={{
-                  width: 40,
-                  height: 40,
-                  borderRadius: '50%',
-                  background: 'linear-gradient(135deg, rgba(201,168,76,0.3), rgba(201,168,76,0.1))',
-                  border: '2px solid var(--gold)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontFamily: 'var(--font-title)',
-                  fontWeight: 700,
-                  fontSize: 15,
-                  color: 'var(--gold)',
-                  marginLeft: i === 0 ? 0 : -10,
-                  zIndex: 3 - i,
-                  position: 'relative',
-                }}
-              >
-                {s.initial}
-              </div>
-            ))}
-          </div>
-          <div style={{ fontSize: 13, color: 'var(--text-secondary)', lineHeight: 1.5 }}>
-            <strong style={{ color: 'rgba(255,255,255,0.85)', display: 'block' }}>3 especialistas confirmados</strong>
-            Luiz Mazanek · Jackson Santos · Alan Ordakovski
-          </div>
+        {/* Specialists text */}
+        <div style={{ marginTop: 40, fontSize: 13, color: 'var(--text-secondary)', lineHeight: 1.5 }}>
+          <strong style={{ color: 'rgba(255,255,255,0.85)', display: 'block', marginBottom: 4 }}>3 especialistas confirmados</strong>
+          Luiz Mazanek · Jackson Santos · Alan Ordakovski
         </div>
 
         <div className="hero-meta" style={{ marginTop: 32 }}>
