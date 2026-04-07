@@ -62,7 +62,7 @@ export function Hero() {
             maxWidth: 560,
             height: 'auto',
             display: 'block',
-            marginBottom: 24,
+            margin: '0 auto 24px',
             filter: 'drop-shadow(0 4px 24px rgba(0,0,0,0.5))',
           }}
         />
@@ -84,7 +84,7 @@ export function Hero() {
         </div>
 
         {/* Speaker avatars */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginTop: 40 }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginTop: 40 }}>
           <div style={{ display: 'flex' }}>
             {[
               { initial: 'L', title: 'Luiz Mazanek' },
