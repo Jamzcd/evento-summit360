@@ -393,10 +393,11 @@ body {
 .hero-gradient {
   position: absolute;
   inset: 0;
-  background: 
-    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(10, 26, 90, 0.6) 0%, transparent 70%),
-    radial-gradient(ellipse 50% 50% at 80% 80%, rgba(201, 168, 76, 0.06) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 60% at 20% 60%, rgba(5, 20, 80, 0.5) 0%, transparent 60%);
+  background:
+    radial-gradient(ellipse 70% 70% at 50% 50%, rgba(2, 8, 24, 0.55) 0%, transparent 75%),
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(10, 26, 90, 0.5) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 50% at 80% 80%, rgba(201, 168, 76, 0.05) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 60% at 20% 60%, rgba(5, 20, 80, 0.4) 0%, transparent 60%);
   pointer-events: none;
 }
 
@@ -405,24 +406,25 @@ body {
   z-index: 2;
   text-align: center;
   padding: 120px 24px 80px;
-  max-width: 900px;
+  max-width: 820px;
+  width: 100%;
 }
 
 .hero-badge {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 8px 20px;
+  padding: 10px 24px;
   background: rgba(201, 168, 76, 0.1);
   border: 1px solid rgba(201, 168, 76, 0.25);
   border-radius: 100px;
   font-family: var(--font-title);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: 28px;
+  margin-bottom: 32px;
   animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
 }
 
@@ -456,35 +458,38 @@ body {
 
 .hero-logo {
   width: 100%;
-  max-width: 560px;
+  max-width: 680px;
   height: auto;
   display: block;
-  margin: 0 auto 24px;
-  filter: drop-shadow(0 4px 24px rgba(0,0,0,0.5));
+  margin: 0 auto 32px;
+  filter: drop-shadow(0 6px 32px rgba(0,0,0,0.7));
+  animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
 }
 
 .hero-specialists {
-  margin-top: 40px;
-  font-size: 13px;
+  margin-top: 44px;
+  font-size: 15px;
   color: var(--text-secondary);
   line-height: 1.6;
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
 }
 
 .hero-specialists strong {
-  color: rgba(255,255,255,0.85);
+  color: rgba(255,255,255,0.9);
+  font-size: 16px;
+  letter-spacing: 0.03em;
 }
 
 .hero-subtitle {
   font-family: var(--font-title);
   font-weight: 300;
-  font-size: clamp(14px, 2vw, 18px);
-  color: var(--text-secondary);
-  max-width: 540px;
-  margin: 0 auto 40px;
+  font-size: clamp(15px, 1.4vw, 21px);
+  color: rgba(255,255,255,0.7);
+  max-width: 580px;
+  margin: 0 auto 44px;
   line-height: 1.7;
   animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
 }
@@ -502,18 +507,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 32px;
-  margin-top: 60px;
+  gap: 40px;
+  margin-top: 56px;
   flex-wrap: wrap;
   animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.7s both;
+  padding: 20px 32px;
+  border-top: 1px solid rgba(255,255,255,0.07);
 }
 
 .hero-meta-item {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--text-secondary);
-  font-size: 13px;
+  color: rgba(255,255,255,0.65);
+  font-size: 15px;
   letter-spacing: 0.05em;
 }
 
