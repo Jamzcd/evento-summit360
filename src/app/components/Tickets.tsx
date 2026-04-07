@@ -1,5 +1,7 @@
 import { useEffect, useRef } from 'react';
 
+const SYMPLA_URL = 'https://www.sympla.com.br/evento/summit-empresarial-360/3365840';
+
 const CheckIcon = () => (
   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
     <polyline points="20 6 9 17 4 12"/>
@@ -58,11 +60,6 @@ export function Tickets() {
         <div className="glass-card ticket-card featured reveal" style={{ transitionDelay: '0s' }}>
           <div className="ticket-featured-badge">Aberto agora</div>
           <div className="ticket-type">1º Lote</div>
-          <div className="ticket-price-wrap">
-            <span className="ticket-price-currency">R$</span>
-            <span className="ticket-price">299</span>
-          </div>
-          <div className="ticket-price-period">por pessoa · pagamento único</div>
 
           <div
             style={{
@@ -76,7 +73,7 @@ export function Tickets() {
               lineHeight: 1.6,
             }}
           >
-            Vagas limitadas neste valor. Quando fechar, sobe para R$ 399 e não volta.
+            Vagas limitadas neste valor. Quando fechar, sobe e não volta.
           </div>
 
           <div className="ticket-divider" />
@@ -91,7 +88,9 @@ export function Tickets() {
           </ul>
 
           <a
-            href="#"
+            href={SYMPLA_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-primary"
             style={{ width: '100%', justifyContent: 'center' }}
           >
@@ -102,11 +101,6 @@ export function Tickets() {
         {/* Lote 2 */}
         <div className="glass-card ticket-card reveal" style={{ transitionDelay: '0.1s' }}>
           <div className="ticket-type">2º Lote</div>
-          <div className="ticket-price-wrap">
-            <span className="ticket-price-currency">R$</span>
-            <span className="ticket-price">399</span>
-          </div>
-          <div className="ticket-price-period">por pessoa · pagamento único</div>
 
           <div
             style={{
@@ -135,7 +129,9 @@ export function Tickets() {
           </ul>
 
           <a
-            href="#"
+            href={SYMPLA_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-outline"
             style={{ width: '100%', justifyContent: 'center', opacity: 0.5, pointerEvents: 'none' as const }}
           >
@@ -145,10 +141,7 @@ export function Tickets() {
       </div>
 
       {/* Urgency Bar */}
-      <div
-        className="urgency-bar reveal"
-        style={{ marginTop: 40 }}
-      >
+      <div className="urgency-bar reveal" style={{ marginTop: 40 }}>
         <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.8)', textAlign: 'center', width: '100%' }}>
           As vagas são limitadas e os lotes não reabrem. Garanta pelo menor valor disponível agora.
         </span>

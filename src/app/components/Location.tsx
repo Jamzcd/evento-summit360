@@ -134,7 +134,7 @@ export function Location() {
           ))}
 
           <div className="reveal" style={{ transitionDelay: '0.35s', marginTop: 32 }}>
-            <a href="#ingressos" className="btn-primary">
+            <a href="https://www.sympla.com.br/evento/summit-empresarial-360/3365840" target="_blank" rel="noopener noreferrer" className="btn-primary">
               Garantir Minha Vaga
             </a>
           </div>

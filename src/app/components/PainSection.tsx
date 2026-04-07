@@ -96,7 +96,7 @@ export function PainSection() {
           <p style={{ color: 'var(--text-secondary)', fontSize: 14, marginBottom: 20 }}>
             Se você se identificou com qualquer um desses pontos, o Summit tem uma resposta para você.
           </p>
-          <a href="#ingressos" className="btn-primary">
+          <a href="https://www.sympla.com.br/evento/summit-empresarial-360/3365840" target="_blank" rel="noopener noreferrer" className="btn-primary">
             Garantir minha vaga
           </a>
         </div>
