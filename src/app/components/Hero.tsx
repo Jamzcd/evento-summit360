@@ -51,7 +51,7 @@ export function Hero() {
         style={{
           position: 'absolute',
           inset: 0,
-          backgroundImage: 'url(/hero-speakers.jpg)',
+          backgroundImage: 'url(/hero-speakers.png)',
           backgroundSize: 'cover',
           backgroundPosition: 'center top',
           backgroundRepeat: 'no-repeat',
