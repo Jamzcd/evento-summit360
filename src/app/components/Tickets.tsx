@@ -48,6 +48,9 @@ export function Tickets() {
         <h2 className="section-title">
           GARANTA SUA <span className="serif">vaga</span>
         </h2>
+        <p style={{ color: 'var(--text-secondary)', fontSize: 15, lineHeight: 1.7, marginTop: 16, maxWidth: 560, margin: '16px auto 0' }}>
+          O evento é presencial e exclusivo. Quem não estiver lá no dia 15 não tem como acessar o conteúdo depois, porque não haverá transmissão, gravação ou um lote adicional — a única forma de participar é garantindo sua vaga agora.
+        </p>
       </div>
 
       <div className="tickets-grid" style={{ maxWidth: 800, margin: '48px auto 0', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))' }}>
@@ -147,7 +150,7 @@ export function Tickets() {
         style={{ marginTop: 40 }}
       >
         <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.8)', textAlign: 'center', width: '100%' }}>
-          120 vagas totais. Sem transmissão online. Sem terceiro lote. Sem segunda chance para esse evento.
+          As vagas são limitadas e os lotes não reabrem. Garanta pelo menor valor disponível agora.
         </span>
       </div>
     </section>

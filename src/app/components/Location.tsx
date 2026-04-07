@@ -9,7 +9,7 @@ const infos = [
       </svg>
     ),
     label: 'Endereço',
-    value: 'Instituto Meraki\nAv. Alm. Álvaro Calheiros, 1120\nMangabeiras · Maceió, AL · 57035-558',
+    value: 'Instituto Meraki Treinamentos\nAv. Alm. Álvaro Calheiros, 1120\nMangabeiras · Maceió, AL · CEP 57035-558',
   },
   {
     icon: (
@@ -71,7 +71,7 @@ export function Location() {
       <div className="reveal">
         <span className="section-label">Onde acontece</span>
         <h2 className="section-title">
-          O <span className="serif">local</span>
+          Informações <span className="serif">do local</span>
         </h2>
       </div>
 

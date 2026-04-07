@@ -4,10 +4,12 @@ import { Nav } from './components/Nav';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { PainSection } from './components/PainSection';
+import { WhyAttend } from './components/WhyAttend';
 import { Speakers } from './components/Speakers';
 import { Schedule } from './components/Schedule';
 import { Tickets } from './components/Tickets';
 import { Location } from './components/Location';
+import { FAQ } from './components/FAQ';
 import { CTAFinal } from './components/CTAFinal';
 import { Footer } from './components/Footer';
 
@@ -41,10 +43,12 @@ export default function App() {
         <PainSection />
 
         <div className="divider-gold" />
+        <WhyAttend />
+
+        <div className="divider-gold" />
         <Speakers />
 
         <div className="divider-gold" />
-
         <div
           style={{
             background:
@@ -59,6 +63,9 @@ export default function App() {
 
         <div className="divider-gold" />
         <Location />
+
+        <div className="divider-gold" />
+        <FAQ />
 
         <div className="divider-gold" />
         <CTAFinal />

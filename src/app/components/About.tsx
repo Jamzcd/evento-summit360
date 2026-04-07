@@ -2,9 +2,9 @@ import { useEffect, useRef } from 'react';
 
 const stats = [
   { number: '3', label: 'Especialistas' },
-  { number: '120', label: 'Vagas únicas' },
   { number: '4h', label: 'de conteúdo' },
-  { number: '0', label: 'Transmissões' },
+  { number: '100%', label: 'Presencial' },
+  { number: 'MCZ', label: 'Maceió, AL' },
 ];
 
 export function About() {
@@ -34,25 +34,26 @@ export function About() {
         {/* Left Column */}
         <div className="about-text">
           <div className="reveal">
-            <span className="section-label">O evento</span>
+            <span className="section-label">Por que esse evento existe</span>
             <h2 className="section-title" style={{ marginBottom: 24 }}>
-              Um dia. Três especialistas.<br /><span className="serif">Zero desculpa.</span>
+              Um dia para entender o que muda —<br />
+              <span className="serif">antes de pagar o preço de não saber.</span>
             </h2>
           </div>
           <div className="reveal" style={{ transitionDelay: '0.1s' }}>
             <p>
-              O Brasil acaba de aprovar a maior reforma tributária dos últimos 30 anos e a maioria dos empresários ainda não sabe o que isso muda no preço que cobra, no contrato que assina e no imposto que paga.
+              O Brasil acabou de aprovar a maior reforma tributária dos últimos 30 anos. Ela já está em vigor e vai afetar o preço que você cobra, o imposto que você paga e o contrato que você assina.
             </p>
             <p>
-              O Summit Empresarial 360 reúne três especialistas em liderança, contabilidade e direito em um único dia, aqui em Maceió, para falar sem rodeios sobre o que muda e o que você precisa fazer antes que as mudanças cheguem.
+              A maioria dos empresários vai descobrir isso na hora errada. O Summit Empresarial 360 existe para que você não seja um deles.
             </p>
             <p>
-              Sem transmissão online. Sem gravação. Quem não estiver lá, não acessa depois.
+              Em uma tarde, três especialistas falam sem rodeios sobre liderança, tributação e direito empresarial, com exemplos reais, linguagem direta e zero enrolação.
             </p>
           </div>
           <div className="reveal" style={{ transitionDelay: '0.2s', marginTop: 28 }}>
             <a href="#ingressos" className="btn-primary">
-              Participar do Evento
+              Garantir Minha Vaga
             </a>
           </div>
         </div>

@@ -64,7 +64,7 @@ export function Hero() {
       <div className="hero-content" style={{ position: 'relative', zIndex: 1 }}>
         <div className="hero-badge">
           <span className="hero-badge-dot" />
-          15 de maio · Maceió, AL
+          15 de maio · Maceió, AL · Vagas limitadas
         </div>
 
         <h1 className="hero-title">
@@ -74,7 +74,7 @@ export function Hero() {
         </h1>
 
         <p className="hero-subtitle">
-          Quem entende antes, decide melhor. Um dia, três especialistas e tudo que o empresário alagoano precisa saber sobre a nova realidade tributária do Brasil.
+          A reforma tributária já mudou as regras do jogo. Seu negócio está pronto para o que vem agora?
         </p>
 
         <div className="hero-actions">
@@ -84,8 +84,8 @@ export function Hero() {
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
           </a>
-          <a href="#sobre" className="btn-outline">
-            Saiba mais
+          <a href="#programacao" className="btn-outline">
+            Ver programação
           </a>
         </div>
 

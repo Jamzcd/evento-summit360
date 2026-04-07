@@ -4,7 +4,6 @@ const links = [
   { label: 'Sobre', href: '#sobre' },
   { label: 'Palestrantes', href: '#palestrantes' },
   { label: 'Programação', href: '#programacao' },
-  { label: 'Ingressos', href: '#ingressos' },
   { label: 'Local', href: '#local' },
 ];
 

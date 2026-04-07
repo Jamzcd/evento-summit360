@@ -1,12 +1,41 @@
 import { useEffect, useRef } from 'react';
 
 const schedule = [
-  { time: '14h00', tag: 'Abertura', title: 'Abertura e credenciamento', speaker: '', desc: 'Recepção dos participantes e entrega dos materiais' },
-  { time: '14h30', tag: 'Palestra', title: 'Liderança na Nova Economia', speaker: 'Luiz Mazanek', desc: 'O que o mercado cobra do líder empresarial hoje' },
-  { time: '15h45', tag: 'Palestra', title: 'Reforma Tributária na Prática', speaker: 'Jackson Santos', desc: 'O que muda no seu negócio e o que fazer antes que chegue a conta' },
-  { time: '16h45', tag: 'Intervalo', title: 'Coffee Break + Networking', speaker: '', desc: 'Intervalo com coffee e espaço para conexões' },
-  { time: '17h15', tag: 'Palestra', title: 'Proteção Jurídica para o Seu Negócio', speaker: 'Alan Ordakovski', desc: 'Contratos PJ, NR1 e os riscos que você ainda não viu' },
-  { time: '18h30', tag: 'Encerramento', title: 'Encerramento', speaker: '', desc: 'Certificados e encerramento oficial' },
+  {
+    time: '14h00',
+    speaker: 'LUIZ MAZANEK',
+    tag: 'Palestra',
+    title: 'Liderança na Nova Economia',
+    desc: 'O mercado mudou e o empresário que não lidera, reage. Luiz Mazanek fala sobre o que o mercado exige do líder hoje, como construir times que funcionam sem depender de você e como tomar decisões melhores em cenário de mudança.',
+  },
+  {
+    time: '15h45',
+    speaker: 'JACKSON SANTOS',
+    tag: 'Palestra',
+    title: 'Reforma Tributária na Prática',
+    desc: 'A maior mudança fiscal dos últimos 30 anos já está em vigor. Jackson Santos traduz a legislação em decisões concretas: o que muda no seu enquadramento, nos seus créditos tributários e no preço que você cobra a partir de agora.',
+  },
+  {
+    time: '16h45',
+    speaker: '',
+    tag: 'Intervalo',
+    title: 'Coffee Break e Networking',
+    desc: 'Espaço para conexões entre empresários, contadores, advogados e gestores presentes no evento.',
+  },
+  {
+    time: '17h15',
+    speaker: 'ALAN ORDAKOVSKI',
+    tag: 'Palestra',
+    title: 'Proteção Jurídica para o Seu Negócio',
+    desc: 'Contratos PJ, NR1 e os impactos jurídicos da reforma tributária nas relações de trabalho. Alan Ordakovski mostra os riscos que a maioria dos empresários carrega sem saber e o que fazer antes que virem problema.',
+  },
+  {
+    time: '18h30',
+    speaker: '',
+    tag: 'Encerramento',
+    title: 'Encerramento',
+    desc: 'Certificados e encerramento oficial.',
+  },
 ];
 
 export function Schedule() {
@@ -56,9 +85,9 @@ export function Schedule() {
       style={{ maxWidth: 720, margin: '0 auto' }}
     >
       <div className="reveal" style={{ marginBottom: 60 }}>
-        <span className="section-label">15 de maio de 2026</span>
+        <span className="section-label">Programação</span>
         <h2 className="section-title">
-          A <span className="serif">programação</span>
+          O que vai <span className="serif">acontecer</span>
         </h2>
       </div>
 
@@ -91,7 +120,7 @@ export function Schedule() {
                 </div>
               )}
               {item.desc && (
-                <div style={{ fontSize: 12, color: 'var(--text-secondary)', marginTop: 6 }}>
+                <div style={{ fontSize: 13, color: 'var(--text-secondary)', marginTop: 8, lineHeight: 1.7 }}>
                   {item.desc}
                 </div>
               )}

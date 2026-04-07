@@ -38,12 +38,12 @@ export function CTAFinal() {
             Não fica de fora
           </span>
           <h2 className="cta-final-title">
-            O BRASIL MUDOU AS REGRAS.<br /><span className="serif">Você está pronto?</span>
+            O BRASIL MUDOU AS REGRAS.<br /><span className="serif">Você vai estar pronto?</span>
           </h2>
         </div>
 
         <p className="cta-final-sub reveal" style={{ transitionDelay: '0.1s' }}>
-          120 vagas. Uma tarde. Três especialistas. O que você aprender no dia 15 de maio fica no seu negócio para sempre.
+          Quem entende antes, decide melhor. Quem espera, paga mais caro em imposto, em contrato mal feito ou em equipe sem direção. Uma tarde pode mudar o quanto o seu negócio paga, o que ele assina e como ele cresce a partir de agora.
         </p>
 
         <div
@@ -67,14 +67,15 @@ export function CTAFinal() {
         <div
           className="reveal"
           style={{
-            marginTop: 24,
+            marginTop: 20,
             fontSize: 12,
             color: 'var(--text-secondary)',
             textAlign: 'center',
             transitionDelay: '0.3s',
+            letterSpacing: '0.04em',
           }}
         >
-          15 de maio de 2026 · Instituto Meraki · Maceió, AL
+          1º lote aberto · R$ 299 · Ingressos via Sympla · Sem transmissão online
         </div>
       </div>
     </section>

@@ -5,15 +5,15 @@ const speakers = [
     name: 'LUIZ MAZANEK',
     location: 'Curitiba, PR',
     role: 'Liderança Empresarial',
-    bio: 'Economista, pós-graduado em Marketing e fundador da Mazanek Palestras e Treinamentos. Mais de 16 anos formando líderes e equipes comerciais em todo o Brasil.',
+    bio: 'Economista, pós-graduado em Marketing, fundador da Mazanek Palestras e Treinamentos. Mais de 16 anos formando líderes e equipes comerciais em todo o Brasil. No Summit, ele fala sobre o que separa o empresário que cresce do que apenas reage.',
     initial: 'L',
     delay: '0s',
   },
   {
     name: 'JACKSON SANTOS',
     location: 'Maceió, AL',
-    role: 'Reforma Tributária',
-    bio: 'Fundador da Patrimone Contabilidade. Referência em Alagoas, atende dezenas de empresas com foco em planejamento e proteção patrimonial.',
+    role: 'Contabilidade e Reforma Tributária',
+    bio: 'Fundador da Patrimone Contabilidade, referência em Alagoas. Cuida da contabilidade de dezenas de empresas e conhece de perto o que a reforma tributária muda na prática. No Summit, ele traduz a legislação em decisões concretas para o dono do negócio.',
     initial: 'J',
     delay: '0.12s',
   },
@@ -21,7 +21,7 @@ const speakers = [
     name: 'ALAN ORDAKOVSKI',
     location: 'Curitiba, PR',
     role: 'Direito Empresarial',
-    bio: 'Advogado especialista em direito empresarial e trabalhista. Atua com NR1, contratos PJ e impactos jurídicos da reforma tributária nas empresas.',
+    bio: 'Advogado especialista em direito empresarial e trabalhista. Atua com NR1, contratos PJ e proteção jurídica de empresas. No Summit, ele mostra os riscos que a maioria dos empresários carrega sem saber e como corrigir antes que virem processo.',
     initial: 'A',
     delay: '0.24s',
   },
@@ -49,13 +49,13 @@ export function Speakers() {
 
   return (
     <section ref={sectionRef} className="section" id="palestrantes">
-      <div className="reveal" style={{ textAlign: 'center', maxWidth: 560, margin: '0 auto' }}>
+      <div className="reveal" style={{ textAlign: 'center', maxWidth: 640, margin: '0 auto' }}>
         <span className="section-label">Quem vai falar</span>
         <h2 className="section-title">
-          OS <span className="serif">especialistas</span>
+          Três especialistas. Três respostas que o seu<br /><span className="serif">negócio precisa agora.</span>
         </h2>
         <p style={{ color: 'var(--text-secondary)', fontSize: 15, lineHeight: 1.7, marginTop: 16 }}>
-          Três profissionais com atuação real no mercado, falando sobre o que muda agora no seu negócio.
+          Nenhum deles vai subir ao palco para motivar. Cada um vem para entregar informação que você vai usar na segunda-feira de manhã.
         </p>
       </div>
 
