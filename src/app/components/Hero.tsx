@@ -1,4 +1,3 @@
-
 function CalendarIcon() {
   return (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -19,17 +18,6 @@ function ClockIcon() {
   );
 }
 
-function UsersIcon() {
-  return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-      <circle cx="9" cy="7" r="4"/>
-      <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-      <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-    </svg>
-  );
-}
-
 function MapPinIcon() {
   return (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -39,16 +27,25 @@ function MapPinIcon() {
   );
 }
 
+const SYMPLA = 'https://www.sympla.com.br/evento/summit-empresarial-360/3365840';
+
 export function Hero() {
   return (
     <section className="hero" id="hero">
       <div className="hero-grid-overlay" />
       <div className="hero-gradient" />
 
-      {/* Hero speakers image */}
-      <div className="hero-bg-image" />
+      {/* Desktop: imagem como background */}
+      <div className="hero-bg-image hero-bg-desktop" />
 
-      <div className="hero-content" style={{ position: 'relative', zIndex: 1 }}>
+      {/* Mobile: imagem no topo como elemento real */}
+      <img
+        className="hero-mobile-image"
+        src="/hero-speakers.jpg"
+        alt="Palestrantes Summit Empresarial 360"
+      />
+
+      <div className="hero-content">
         <div className="hero-badge">
           <span className="hero-badge-dot" />
           15 de maio · Maceió, AL · Vagas limitadas
@@ -57,14 +54,7 @@ export function Hero() {
         <img
           src="/logo-evento.png"
           alt="Summit Empresarial 360"
-          style={{
-            width: '100%',
-            maxWidth: 560,
-            height: 'auto',
-            display: 'block',
-            margin: '0 auto 24px',
-            filter: 'drop-shadow(0 4px 24px rgba(0,0,0,0.5))',
-          }}
+          className="hero-logo"
         />
 
         <p className="hero-subtitle">
@@ -72,7 +62,7 @@ export function Hero() {
         </p>
 
         <div className="hero-actions">
-          <a href="https://www.sympla.com.br/evento/summit-empresarial-360/3365840" target="_blank" rel="noopener noreferrer" className="btn-primary">
+          <a href={SYMPLA} target="_blank" rel="noopener noreferrer" className="btn-primary">
             Garantir Minha Vaga
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -83,13 +73,12 @@ export function Hero() {
           </a>
         </div>
 
-        {/* Specialists text */}
-        <div style={{ marginTop: 40, fontSize: 13, color: 'var(--text-secondary)', lineHeight: 1.5 }}>
-          <strong style={{ color: 'rgba(255,255,255,0.85)', display: 'block', marginBottom: 4 }}>3 especialistas confirmados</strong>
-          Luiz Mazanek · Jackson Santos · Alan Ordakovski
+        <div className="hero-specialists">
+          <strong>3 especialistas confirmados</strong>
+          <span>Luiz Mazanek · Jackson Santos · Alan Ordakovski</span>
         </div>
 
-        <div className="hero-meta" style={{ marginTop: 32 }}>
+        <div className="hero-meta">
           <div className="hero-meta-item">
             <CalendarIcon />
             <span>15 Mai 2026</span>
