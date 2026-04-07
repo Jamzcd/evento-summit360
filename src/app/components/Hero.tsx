@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 
 function CalendarIcon() {
   return (
@@ -47,19 +46,7 @@ export function Hero() {
       <div className="hero-gradient" />
 
       {/* Hero speakers image */}
-      <div
-        style={{
-          position: 'absolute',
-          inset: 0,
-          backgroundImage: 'url(/hero-speakers.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center top',
-          backgroundRepeat: 'no-repeat',
-          opacity: 0.45,
-          pointerEvents: 'none',
-          zIndex: 0,
-        }}
-      />
+      <div className="hero-bg-image" />
 
       <div className="hero-content" style={{ position: 'relative', zIndex: 1 }}>
         <div className="hero-badge">
@@ -143,10 +130,6 @@ export function Hero() {
           <div className="hero-meta-item">
             <ClockIcon />
             <span>14h – 18h30</span>
-          </div>
-          <div className="hero-meta-item">
-            <UsersIcon />
-            <span>120 vagas</span>
           </div>
           <div className="hero-meta-item">
             <MapPinIcon />

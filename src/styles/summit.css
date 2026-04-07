@@ -328,6 +328,32 @@ body {
   overflow: hidden;
 }
 
+.hero-bg-image {
+  position: absolute;
+  inset: 0;
+  background-image: url(/hero-speakers.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  opacity: 0.45;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .hero-bg-image {
+    background-position: 60% top;
+    background-size: 200%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-bg-image {
+    background-position: 58% top;
+    background-size: 280%;
+  }
+}
+
 .hero-grid-overlay {
   position: absolute;
   inset: 0;
