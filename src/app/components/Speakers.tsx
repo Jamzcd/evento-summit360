@@ -6,7 +6,7 @@ const speakers = [
     location: 'Curitiba, PR',
     role: 'Liderança Empresarial',
     bio: 'Economista, pós-graduado em Marketing, fundador da Mazanek Palestras e Treinamentos. Mais de 16 anos formando líderes e equipes comerciais em todo o Brasil. No Summit, ele fala sobre o que separa o empresário que cresce do que apenas reage.',
-    initial: 'L',
+    photo: '/luiz.jpg',
     delay: '0s',
   },
   {
@@ -14,7 +14,7 @@ const speakers = [
     location: 'Maceió, AL',
     role: 'Contabilidade e Reforma Tributária',
     bio: 'Fundador da Patrimone Contabilidade, referência em Alagoas. Cuida da contabilidade de dezenas de empresas e conhece de perto o que a reforma tributária muda na prática. No Summit, ele traduz a legislação em decisões concretas para o dono do negócio.',
-    initial: 'J',
+    photo: '/jackson.jpg',
     delay: '0.12s',
   },
   {
@@ -22,7 +22,7 @@ const speakers = [
     location: 'Curitiba, PR',
     role: 'Direito Empresarial',
     bio: 'Advogado especialista em direito empresarial e trabalhista. Atua com NR1, contratos PJ e proteção jurídica de empresas. No Summit, ele mostra os riscos que a maioria dos empresários carrega sem saber e como corrigir antes que virem processo.',
-    initial: 'A',
+    photo: '/alan.jpg',
     delay: '0.24s',
   },
 ];
@@ -67,21 +67,12 @@ export function Speakers() {
             style={{ transitionDelay: s.delay }}
           >
             <div className="speaker-photo-wrap">
-              <div
+              <img
+                src={s.photo}
+                alt={s.name}
                 className="speaker-photo"
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  background: 'linear-gradient(135deg, rgba(201,168,76,0.25), rgba(201,168,76,0.08))',
-                  fontFamily: 'var(--font-title)',
-                  fontWeight: 700,
-                  fontSize: 48,
-                  color: 'var(--gold)',
-                }}
-              >
-                {s.initial}
-              </div>
+                style={{ objectFit: 'cover', objectPosition: 'center top' }}
+              />
               <div className="speaker-photo-ring" />
             </div>
 
