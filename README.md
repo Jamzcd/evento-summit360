@@ -1,5 +1,7 @@
 # Summit Empresarial 360
 
+**Deploy:** https://summit-empresarial-360.netlify.app/
+
 Landing page do **Summit Empresarial 360** — evento presencial realizado em Maceió, AL no dia 15 de maio de 2026.
 
 ## Sobre o evento

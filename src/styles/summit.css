@@ -351,6 +351,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     min-height: auto;
+    padding-top: 64px;
   }
 
   .hero-bg-desktop {
