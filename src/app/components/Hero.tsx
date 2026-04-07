@@ -67,11 +67,18 @@ export function Hero() {
           15 de maio · Maceió, AL · Vagas limitadas
         </div>
 
-        <h1 className="hero-title">
-          SUMMIT
-          <span className="serif">Empresarial</span>
-          360
-        </h1>
+        <img
+          src="/logo-evento.png"
+          alt="Summit Empresarial 360"
+          style={{
+            width: '100%',
+            maxWidth: 560,
+            height: 'auto',
+            display: 'block',
+            marginBottom: 24,
+            filter: 'drop-shadow(0 4px 24px rgba(0,0,0,0.5))',
+          }}
+        />
 
         <p className="hero-subtitle">
           A reforma tributária já mudou as regras do jogo. Seu negócio está pronto para o que vem agora?

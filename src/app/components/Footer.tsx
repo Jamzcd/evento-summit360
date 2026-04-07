@@ -8,18 +8,11 @@ export function Footer() {
     >
       <div className="footer">
         <div>
-          <div
-            style={{
-              fontFamily: 'var(--font-title)',
-              fontWeight: 700,
-              fontSize: 15,
-              letterSpacing: '0.12em',
-              textTransform: 'uppercase',
-              marginBottom: 10,
-            }}
-          >
-            SUMMIT <span style={{ color: 'var(--gold)' }}>Empresarial 360</span>
-          </div>
+          <img
+            src="/logo-evento.png"
+            alt="Summit Empresarial 360"
+            style={{ height: 36, width: 'auto', display: 'block', marginBottom: 12, opacity: 0.9 }}
+          />
           <div className="footer-copy" style={{ lineHeight: 1.8 }}>
             15 de maio de 2026 · 14h às 18h30<br />
             Instituto Meraki · Mangabeiras · Maceió, AL<br />

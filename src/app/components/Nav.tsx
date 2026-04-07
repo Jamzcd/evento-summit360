@@ -20,7 +20,11 @@ export function Nav() {
   return (
     <nav className={`nav${scrolled ? ' scrolled' : ''}`}>
       <a href="#hero" className="nav-logo">
-        SUMMIT <span>360</span>
+        <img
+          src="/logo-evento.png"
+          alt="Summit Empresarial 360"
+          style={{ height: 28, width: 'auto', display: 'block' }}
+        />
       </a>
       <ul className="nav-links">
         {links.map((l) => (
