@@ -76,28 +76,63 @@ export function Location() {
       </div>
 
       <div className="location-grid">
-        {/* Map placeholder */}
+        {/* Map — clicável, abre Google Maps */}
         <div className="reveal">
-          <div
-            style={{
-              width: '100%',
-              aspectRatio: '16/9',
-              borderRadius: 12,
-              overflow: 'hidden',
-              border: '1px solid rgba(201,168,76,0.15)',
-            }}
+          <a
+            href="https://share.google/WOf661PuuPlKzgTIL"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: 'block', position: 'relative', textDecoration: 'none' }}
+            aria-label="Abrir localização no Google Maps"
           >
-            <iframe
-              title="Instituto Meraki"
-              width="100%"
-              height="100%"
-              style={{ border: 0, display: 'block' }}
-              loading="lazy"
-              allowFullScreen
-              referrerPolicy="no-referrer-when-downgrade"
-              src="https://maps.google.com/maps?q=Instituto+Meraki+Treinamentos+Av+Alm+Alvaro+Calheiros+1120+Mangabeiras+Maceio+AL&output=embed&hl=pt-BR&z=16"
-            />
-          </div>
+            <div
+              style={{
+                width: '100%',
+                aspectRatio: '16/9',
+                borderRadius: 12,
+                overflow: 'hidden',
+                border: '1px solid rgba(201,168,76,0.15)',
+                position: 'relative',
+              }}
+            >
+              <iframe
+                title="Instituto Meraki"
+                width="100%"
+                height="100%"
+                style={{ border: 0, display: 'block', pointerEvents: 'none' }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-35.7415%2C-9.6660%2C-35.7215%2C-9.6460&layer=mapnik&marker=-9.6560%2C-35.7315"
+              />
+              {/* Overlay transparente captura o clique e abre Google Maps */}
+              <div
+                style={{
+                  position: 'absolute',
+                  inset: 0,
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'flex-end',
+                  justifyContent: 'flex-end',
+                  padding: 12,
+                }}
+              >
+                <span
+                  style={{
+                    background: 'rgba(2,8,24,0.75)',
+                    color: 'var(--gold)',
+                    fontSize: 12,
+                    fontWeight: 700,
+                    letterSpacing: '0.08em',
+                    padding: '6px 12px',
+                    borderRadius: 6,
+                    border: '1px solid rgba(201,168,76,0.3)',
+                  }}
+                >
+                  ABRIR NO GOOGLE MAPS ↗
+                </span>
+              </div>
+            </div>
+          </a>
           <div
             style={{
               marginTop: 16,
