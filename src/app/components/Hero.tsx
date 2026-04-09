@@ -35,12 +35,9 @@ export function Hero() {
       <div className="hero-grid-overlay" />
       <div className="hero-gradient" />
 
-      {/* Desktop: imagem como background */}
-      <div className="hero-bg-image hero-bg-desktop" />
-
-      {/* Mobile: imagem no topo como elemento real */}
+      {/* Mobile only — desktop usa background-image via CSS */}
       <img
-        className="hero-mobile-image"
+        className="hero-image"
         src="/hero-speakers.jpg"
         alt="Palestrantes Summit Empresarial 360"
       />
