@@ -95,7 +95,7 @@ export function Location() {
               loading="lazy"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU3Lo0&q=Av.+Alm.+Álvaro+Calheiros,+1120,+Mangabeiras,+Maceió,+AL"
+              src="https://maps.google.com/maps?q=Instituto+Meraki+Treinamentos+Av+Alm+Alvaro+Calheiros+1120+Mangabeiras+Maceio+AL&output=embed&hl=pt-BR&z=16"
             />
           </div>
           <div
