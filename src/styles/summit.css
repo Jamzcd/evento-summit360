@@ -322,7 +322,8 @@ body {
 .hero {
   position: relative;
   overflow: hidden;
-  min-height: 100svh;
+  width: 100%;
+  aspect-ratio: 16 / 9;
   background-image: url('/hero-speakers.jpg');
   background-size: cover;
   background-position: 50% 20%;
@@ -346,6 +347,7 @@ body {
 
 @media (max-width: 768px) {
   .hero {
+    aspect-ratio: auto;
     min-height: auto;
     background-image: none;
     display: flex;
