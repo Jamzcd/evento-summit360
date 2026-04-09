@@ -76,7 +76,7 @@ export function Location() {
       </div>
 
       <div className="location-grid">
-        {/* Map — clicável, abre Google Maps */}
+        {/* Map — imagem estática clicável, abre Google Maps */}
         <div className="reveal">
           <a
             href="https://share.google/WOf661PuuPlKzgTIL"
@@ -93,61 +93,47 @@ export function Location() {
                 overflow: 'hidden',
                 border: '1px solid rgba(201,168,76,0.15)',
                 position: 'relative',
+                background: 'rgba(10,26,74,0.6)',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: 16,
+                cursor: 'pointer',
               }}
             >
-              <iframe
-                title="Instituto Meraki"
-                width="100%"
-                height="100%"
-                style={{ border: 0, display: 'block', pointerEvents: 'none' }}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=-35.7415%2C-9.6660%2C-35.7215%2C-9.6460&layer=mapnik&marker=-9.6560%2C-35.7315"
-              />
-              {/* Overlay transparente captura o clique e abre Google Maps */}
-              <div
+              {/* Ícone de pin */}
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+
+              <div style={{ textAlign: 'center', padding: '0 24px' }}>
+                <div style={{ color: '#fff', fontWeight: 700, fontSize: 16, marginBottom: 6, letterSpacing: '0.04em' }}>
+                  Instituto Meraki Treinamentos
+                </div>
+                <div style={{ color: 'var(--text-secondary)', fontSize: 13, lineHeight: 1.6 }}>
+                  Av. Alm. Álvaro Calheiros, 1120<br />
+                  Mangabeiras · Maceió, AL
+                </div>
+              </div>
+
+              <span
                 style={{
-                  position: 'absolute',
-                  inset: 0,
-                  cursor: 'pointer',
-                  display: 'flex',
-                  alignItems: 'flex-end',
-                  justifyContent: 'flex-end',
-                  padding: 12,
+                  background: 'var(--gold)',
+                  color: '#020818',
+                  fontSize: 12,
+                  fontWeight: 700,
+                  letterSpacing: '0.1em',
+                  padding: '10px 24px',
+                  borderRadius: 6,
+                  textTransform: 'uppercase',
                 }}
               >
-                <span
-                  style={{
-                    background: 'rgba(2,8,24,0.75)',
-                    color: 'var(--gold)',
-                    fontSize: 12,
-                    fontWeight: 700,
-                    letterSpacing: '0.08em',
-                    padding: '6px 12px',
-                    borderRadius: 6,
-                    border: '1px solid rgba(201,168,76,0.3)',
-                  }}
-                >
-                  ABRIR NO GOOGLE MAPS ↗
-                </span>
-              </div>
+                Ver no Google Maps ↗
+              </span>
             </div>
           </a>
-          <div
-            style={{
-              marginTop: 16,
-              padding: '12px 16px',
-              background: 'rgba(201,168,76,0.06)',
-              border: '1px solid rgba(201,168,76,0.15)',
-              borderRadius: 8,
-              fontSize: 12,
-              color: 'var(--text-secondary)',
-              textAlign: 'center',
-              letterSpacing: '0.05em',
-            }}
-          >
-            📍 Instituto Meraki · Mangabeiras · Maceió, AL
-          </div>
         </div>
 
         {/* Info */}
