@@ -52,7 +52,7 @@ export function About() {
             </p>
           </div>
           <div className="reveal" style={{ transitionDelay: '0.2s', marginTop: 28 }}>
-            <a href="https://www.sympla.com.br/evento/summit-empresarial-360/3365840" target="_blank" rel="noopener noreferrer" className="btn-primary">
+            <a href="https://www.sympla.com.br/evento/summit-empresarial-360/3365840" target="_blank" rel="noopener noreferrer" className="btn-primary" onClick={() => { if ((window as any).fbq) (window as any).fbq('track', 'InitiateCheckout'); }}>
               Garantir Minha Vaga
             </a>
           </div>

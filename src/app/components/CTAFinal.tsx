@@ -56,7 +56,7 @@ export function CTAFinal() {
             transitionDelay: '0.2s',
           }}
         >
-          <a href="https://www.sympla.com.br/evento/summit-empresarial-360/3365840" target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ fontSize: '14px', padding: '18px 44px' }}>
+          <a href="https://www.sympla.com.br/evento/summit-empresarial-360/3365840" target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ fontSize: '14px', padding: '18px 44px' }} onClick={() => { if ((window as any).fbq) (window as any).fbq('track', 'InitiateCheckout'); }}>
             Garantir Minha Vaga Agora
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14M12 5l7 7-7 7"/>
